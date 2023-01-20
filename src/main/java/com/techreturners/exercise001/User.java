@@ -1,9 +1,9 @@
 package com.techreturners.exercise001;
 
 public class User {
-    private String username;
-    private String operatingSystem;
-    private String type;
+    private final String username;
+    private final String operatingSystem;
+    private final String type;
 
     public User(String username, String operatingSystem, String type) {
         this.username = username;
