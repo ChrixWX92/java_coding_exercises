@@ -1,13 +1,31 @@
 package com.techreturners.exercise003;
 
+import java.util.List;
+
 public class Exercise003 {
 
-    int getIceCreamCode(String iceCreamFlavour) {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+    List<String> iceCreamFlavours = List.of(
+
+        "Pistachio",
+        "Raspberry Ripple",
+        "Vanilla",
+        "Mint Chocolate Chip",
+        "Chocolate",
+        "Mango Sorbet"
+
+    );
+
+    int getIceCreamCode(String iceCreamFlavour) throws InvalidFlavourException {
+
+        if (iceCreamFlavours.contains(iceCreamFlavour))
+            return iceCreamFlavours.indexOf(iceCreamFlavour);
+        else
+            throw new InvalidFlavourException("No encoding available for \"" + iceCreamFlavour + "\".");
+
     }
 
     String[] iceCreamFlavours() {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+        return iceCreamFlavours.toArray(new String[0]);
     }
 
 }

@@ -55,12 +55,12 @@ public class Exercise001Test {
         User u4 = new User("Pedro", "Ubuntu 18.04", "Linux");
 
 
-        List<User> users = new ArrayList<User>();
+        List<User> users = new ArrayList<>();
         users.add(u1);
         users.add(u2);
         assertEquals(0, ex001.countLinuxUsers(users));
 
-        users = new ArrayList<User>();
+        users = new ArrayList<>();
         users.add(u1);
         users.add(u2);
         users.add(u3);
